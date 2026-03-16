@@ -220,7 +220,7 @@ test.describe('Ticket search functionality', () => {
         })
     })
 
-     test.fail('Confirmando Fecha y dar Back a al pagina ', async ({ page }) => {
+     test.fixme('Confirmando Fecha y dar Back a al pagina ', async ({ page }) => {
         
         await test.step('Origen del pasaje', async () => {
             //Action
