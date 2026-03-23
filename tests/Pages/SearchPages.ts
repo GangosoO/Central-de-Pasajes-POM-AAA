@@ -66,7 +66,7 @@ export class Search {
         this.numeroRetornoExpirado = page.locator('#cdp-calendar-container-regreso').getByText('4', { exact: true })
 
         //Fecha confirmacion de Boleto
-        this.confirmacionIda = page.locator('#cdp-calendar-container').getByText('20', { exact: true });
+        this.confirmacionIda = page.locator('#cdp-calendar-container').getByText('28', { exact: true });
         this.confirmacionIdaYVuelta = page.locator('#cdp-calendar-container-regreso').getByText('31', { exact: true });
 
         //Flecha de BACK en Fecha
@@ -89,7 +89,7 @@ export class Search {
         this.popUptexto = page.getByText('No encontramos opciones para')
 
         //Compra Boleto
-        this.compraBoleto = page.getByRole('link', { name: 'Desde $ 210.000 por persona' });
+        this.compraBoleto = page.getByRole('link', { name: 'Desde $ 349.100 por persona' })
         this.puestoUno = page.getByRole('link', { name: '09' });
         this.puestoDos = page.getByRole('link', { name: '10' });
         this.botonContiuar = page.locator('#btnSigue');
