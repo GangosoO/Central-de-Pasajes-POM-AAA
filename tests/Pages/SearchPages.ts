@@ -54,7 +54,7 @@ export class Search {
 
         //Fecha
         this.fechaIda = page.getByRole('textbox', { name: 'Ida' });
-        this.numeroIda = page.locator('#cdp-calendar-container').getByText('28', { exact: true });
+        this.numeroIda = page.locator('#cdp-calendar-container').getByText('30', { exact: true });
         this.fechaIdaYVuelta = page.getByRole('textbox', { name: 'Vuelta' });
         this.numeroIdaYVuelta = page.locator('#cdp-calendar-container-regreso').getByText('31', { exact: true });
 
@@ -80,7 +80,7 @@ export class Search {
     
 
         //Atributos para Assertion
-        this.confirmarFecha = page.getByText('Sabado28 Mardesde$');
+        this.confirmarFecha = page.getByText('Lunes30 Mardesde$')
         this.textoHeader = page.getByText('Seleccioná tu viaje de IDA Retiro Buenos Aires Florianopolis Modificar');
         this.textFechaExpirada = page.getByText('Por favor, completá todos los');
 
