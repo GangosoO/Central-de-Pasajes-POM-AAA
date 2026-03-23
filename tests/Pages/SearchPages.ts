@@ -89,7 +89,7 @@ export class Search {
         this.popUptexto = page.getByText('No encontramos opciones para')
 
         //Compra Boleto
-        this.compraBoleto = page.getByRole('link', { name: 'Desde $ 349.100 por persona' })
+        this.compraBoleto = page.getByRole('link', { name: 'Desde $ 231.000 por persona' })
         this.puestoUno = page.getByRole('link', { name: '09' });
         this.puestoDos = page.getByRole('link', { name: '10' });
         this.botonContiuar = page.locator('#btnSigue');
